@@ -40,6 +40,10 @@ def clean_text(text, lower=True, stem=False, stopwords=STOPWORDS):
     return text
 
 
+def replace_dash(x):
+    return x.replace("-", " ")
+
+
 class LabelEncoder(object):
     """Encode labels into unique indices"""
 
